@@ -1,0 +1,23 @@
+<!-- We don't want to number our chapters anymore. -->
+\docBodyfalse
+\setcounter{secnumdepth}{-1}
+
+\realSingleSpace
+
+<!-- The bib chunk below must go last in this document according to how R
+Markdown renders.  More info is at
+http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html If
+you'd like to change the name of the bibliography to something else, delete
+"References" and replace it. -->
+
+# REFERENCES {-}
+
+<!--This manually sets the location of the references to here-->
+<div id="refs"></div>
+
+<!-- Add other entries into the list here if you'd like them to appear in the
+bibliography even if they weren't explicitly cited in the document. -->
+
+---
+nocite: | @Xie2021, @Xie2016
+...

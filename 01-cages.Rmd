@@ -1,0 +1,7 @@
+# CAGE SET UP AND MAINTENANCE
+
+beans
+
+```{r rrv-symptoms, cache = TRUE, cache.extra = file.mtime('figure/symp-rrd.tif'), fig.cap="Typical symptoms of Rose Rosette Disease (RRD), caused by \\textit{Rose rosette emaravirus}: clusters of deformed flowers known as rosettes/witches' brooms, increased thorniness, elongated shoots, reddened leaves and stems. RRD ultimately kills the rose host.", fig.scap="Typical symptoms of Rose Rosette Disease (RRD), caused by \\textit{Rose rosette emaravirus}", warning=FALSE}
+grid::grid.raster(tiff::readTIFF("figure/symp-rrd.tif"))
+```
