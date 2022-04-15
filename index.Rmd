@@ -35,27 +35,6 @@ link-citations: true
 
 # Download your specific csl file and refer to it in the line below.
 csl: csl/entsoc.csl
-
-# If you are creating a PDF you'll need to write your preliminary content 
-# (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
-# for the .RMD files. If you are NOT producing a PDF, delete or silence
-# lines 25-39 in this YAML header.
-# If you are creating a PDF you'll need to write your preliminary content here or
-# use code similar to line 20 for the files.  If you are producing in a different
-# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
-abstract: |
-  `r paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")` 
-
-# If you'd rather include the preliminary content in files instead of inline
-# like below, use a command like that for the abstract above.  Note that a tab 
-# is needed on the line after the `|`.
-acknowledgments: |
-  `r paste(readLines(here::here("prelims", "00-acknowledgments.Rmd")), collapse = "\n  ")`
-dedication: |
-  `r paste(readLines(here::here("prelims", "00-dedication.Rmd")), collapse = "\n  ")`
-  
-# keywords: keywords #this isn't implemented yet
-# subject: subject #also not implemented
 # space_between_paragraphs: true
 ---
 
@@ -100,32 +79,13 @@ library(thesisdown)
 # Set how wide the R output will go
 options(width = 70)
 
-#installs the required phantomjs for the maps
-if (!require(webshot))
-  webshot::install_phantomjs()
-
 pkgs <-
   c(
     "bookdown",
     "thesisdown",
-    "tidyverse",
-    "sf",
-    "ggplot2",
-    "leaflet",
-    "leafsync",
-    "kableExtra",
-    "dplyr",
-    "ggthemes",
     "showtext",
     "extrafont",
     "Cairo",
-    "writexl",
-    "readxl",
-    "mapview",
-    "htmlwidgets",
-    "viridisLite",
-    "wesanderson",
-    "pryr",
     "tiff",
     "usethis",
     "devtools"
